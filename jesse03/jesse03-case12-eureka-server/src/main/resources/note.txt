@@ -1,0 +1,10 @@
+启动  jesse03-case12-eureka-server
+jesse03-case12-service-hi
+
+http://localhost:8761/
+http://localhost:8762/hi?name=forezp
+http://localhost:8762/hystrix
+
+
+
+

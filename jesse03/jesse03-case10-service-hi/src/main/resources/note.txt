@@ -1,0 +1,32 @@
+按照官方文档的指示，需要改变etc/hosts，linux系统通过vim /etc/hosts ,加上：
+
+127.0.0.1 peer1
+127.0.0.1 peer2
+1
+2
+windows电脑，在c:/windows/systems/drivers/etc/hosts 修改。
+
+启动eureka-server：
+
+java -jar eureka-server-0.0.1-SNAPSHOT.jar - -spring.profiles.active=peer1
+
+java -jar eureka-server-0.0.1-SNAPSHOT.jar - -spring.profiles.active=peer2
+
+启动service-hi:
+
+java -jar service-hi-0.0.1-SNAPSHOT.jar
+
+访问：localhost:8761,如图：
+
+个人感受：这是通过看官方文档的写的demo ，但是需要手动改host是不是不符合Spring Cloud 的高上大？
+
+Prefer IP Address
+
+In some cases, it is preferable for Eureka to advertise the IP Adresses of services rather than the hostname. Set eureka.instance.preferIpAddress to true and when the application registers with eureka, it will use its IP Address rather than its hostname.
+
+摘自官网
+eureka.instance.preferIpAddress=true是通过设置ip让eureka让其他服务注册它。也许能通过去改变去通过改变host的方式。
+
+
+
+

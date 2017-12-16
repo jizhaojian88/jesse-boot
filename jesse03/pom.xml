@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jesse03.cloud.base</groupId>
+  <artifactId>jesse03</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>jesse03</name>
+  <url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+  
+  <modules>
+    <module>jesse03-case01-eureka-server</module>
+    <module>jesse03-case01-eureka-client</module>
+    <module>jesse03-case02-eurka-server</module>
+    <module>jesse03-case02-eureka-client</module>
+    <module>jesse03-case02-ribbon</module>
+    <module>jesse03-case03-feign</module>
+    <module>jesse03-case04-hystrix</module>
+    <module>jesse03-case05-zuul</module>
+    <module>jesse03-case06-config-server</module>
+    <module>jesse03-case09-zipkin</module>
+    <module>jesse03-case09-service-hi</module>
+    <module>jesse03-case09-service-miya</module>
+    <module>jesse03-case10-eureka-server</module>
+    <module>jesse03-case10-service-hi</module>
+    <module>jesse03-case12-eureka-server</module>
+    <module>jesse03-case12-service-hi</module>
+    <module>jesse03-case13-eureka-server</module>
+    <module>jesse03-case13-service-hi</module>
+    <module>jesse03-case13-service-turbine</module>
+    <module>jesse03-case13-service-lucy</module>
+    <module>jesse03-case14-consul</module>
+  </modules>
+</project>

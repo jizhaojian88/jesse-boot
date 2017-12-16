@@ -1,0 +1,7 @@
+启动 zippkin ,service-hi , service-miya
+http://localhost:9411/traces/e18ce977f28f15ca
+http://localhost:8989/miya
+http://localhost:8989/hi
+http://localhost:8988/hi
+
+
