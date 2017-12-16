@@ -1,8 +1,7 @@
 ﻿# 项目介绍
-
-jesse04  spring boot
-jesse03  spring cloud
-jesse05-case01-sleuth  spring cloud 链路监控
+* jesse04 | spring boot
+* jesse03 | spring cloud
+* jesse05-case01-sleuth  | spring cloud 链路监控
 
 欢迎加入QQ技术交流群，共同进步。
 
